@@ -1,9 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TollFeeCalculator", "TollFeeCalculator\TollFeeCalculator.csproj", "{B26C90A2-2CA8-4F43-A40B-AA65B2EAED0A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TollFeeCalculator.Application", "TollFeeCalculator.Application\TollFeeCalculator.Application.csproj", "{D81B4C6B-979B-4DB8-B7A7-BEF96A84A1E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TollFeeCalculator.Domain", "TollFeeCalculator.Domain\TollFeeCalculator.Domain.csproj", "{EA9F538D-6E9D-4694-B5DC-E33B7624A314}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0285BB81-F752-4A84-9A75-38994F879A91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TollFeeCalculator.Infrastructure", "TollFeeCalculator.Infrastructure\TollFeeCalculator.Infrastructure.csproj", "{729E094D-00AA-4914-AB20-CC9DC62C76A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TollFeeCalculator.WebUI", "TollFeeCalculator.WebUI\TollFeeCalculator.WebUI.csproj", "{1B8FB066-0A89-40D6-9B9D-D01132E71BC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{FF3E69E6-A35B-459C-B305-4DB8B98F6903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TollFeeCalculator.UnitTests", "TollFeeCalculator.UnitTests\TollFeeCalculator.UnitTests.csproj", "{379DD3C9-21D4-4EF6-AE82-96EF20D8D46A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A3D1A45B-EFBB-4EAC-AB26-8A8EECDBEB96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{E252ABB8-A8B7-4EB4-B447-D6EAE81FAC9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{D20E6FB4-5DB5-422A-8472-7D0A2A153F89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TollFeeCalculator.WebApi", "TollFeeCalculator.WebApi\TollFeeCalculator.WebApi.csproj", "{1732B406-D785-4DA6-B27A-F6807831D748}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TollFeeCalculator.Persistence", "TollFeeCalculator.Persistence\TollFeeCalculator.Persistence.csproj", "{0940A6ED-02BA-4D45-BDE0-55FD37B06AAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +33,48 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B26C90A2-2CA8-4F43-A40B-AA65B2EAED0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B26C90A2-2CA8-4F43-A40B-AA65B2EAED0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B26C90A2-2CA8-4F43-A40B-AA65B2EAED0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B26C90A2-2CA8-4F43-A40B-AA65B2EAED0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D81B4C6B-979B-4DB8-B7A7-BEF96A84A1E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D81B4C6B-979B-4DB8-B7A7-BEF96A84A1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D81B4C6B-979B-4DB8-B7A7-BEF96A84A1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D81B4C6B-979B-4DB8-B7A7-BEF96A84A1E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA9F538D-6E9D-4694-B5DC-E33B7624A314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA9F538D-6E9D-4694-B5DC-E33B7624A314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA9F538D-6E9D-4694-B5DC-E33B7624A314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA9F538D-6E9D-4694-B5DC-E33B7624A314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{729E094D-00AA-4914-AB20-CC9DC62C76A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{729E094D-00AA-4914-AB20-CC9DC62C76A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{729E094D-00AA-4914-AB20-CC9DC62C76A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{729E094D-00AA-4914-AB20-CC9DC62C76A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B8FB066-0A89-40D6-9B9D-D01132E71BC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B8FB066-0A89-40D6-9B9D-D01132E71BC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B8FB066-0A89-40D6-9B9D-D01132E71BC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B8FB066-0A89-40D6-9B9D-D01132E71BC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{379DD3C9-21D4-4EF6-AE82-96EF20D8D46A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379DD3C9-21D4-4EF6-AE82-96EF20D8D46A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379DD3C9-21D4-4EF6-AE82-96EF20D8D46A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379DD3C9-21D4-4EF6-AE82-96EF20D8D46A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1732B406-D785-4DA6-B27A-F6807831D748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1732B406-D785-4DA6-B27A-F6807831D748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1732B406-D785-4DA6-B27A-F6807831D748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1732B406-D785-4DA6-B27A-F6807831D748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0940A6ED-02BA-4D45-BDE0-55FD37B06AAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0940A6ED-02BA-4D45-BDE0-55FD37B06AAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0940A6ED-02BA-4D45-BDE0-55FD37B06AAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0940A6ED-02BA-4D45-BDE0-55FD37B06AAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D81B4C6B-979B-4DB8-B7A7-BEF96A84A1E8} = {A3D1A45B-EFBB-4EAC-AB26-8A8EECDBEB96}
+		{EA9F538D-6E9D-4694-B5DC-E33B7624A314} = {A3D1A45B-EFBB-4EAC-AB26-8A8EECDBEB96}
+		{729E094D-00AA-4914-AB20-CC9DC62C76A9} = {D20E6FB4-5DB5-422A-8472-7D0A2A153F89}
+		{1B8FB066-0A89-40D6-9B9D-D01132E71BC4} = {E252ABB8-A8B7-4EB4-B447-D6EAE81FAC9A}
+		{379DD3C9-21D4-4EF6-AE82-96EF20D8D46A} = {FF3E69E6-A35B-459C-B305-4DB8B98F6903}
+		{A3D1A45B-EFBB-4EAC-AB26-8A8EECDBEB96} = {0285BB81-F752-4A84-9A75-38994F879A91}
+		{E252ABB8-A8B7-4EB4-B447-D6EAE81FAC9A} = {0285BB81-F752-4A84-9A75-38994F879A91}
+		{D20E6FB4-5DB5-422A-8472-7D0A2A153F89} = {0285BB81-F752-4A84-9A75-38994F879A91}
+		{1732B406-D785-4DA6-B27A-F6807831D748} = {E252ABB8-A8B7-4EB4-B447-D6EAE81FAC9A}
+		{0940A6ED-02BA-4D45-BDE0-55FD37B06AAC} = {D20E6FB4-5DB5-422A-8472-7D0A2A153F89}
 	EndGlobalSection
 EndGlobal
